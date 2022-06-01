@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,7 +20,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import formacao.desenvolvedores.tecnologia.uno.porjetodesoftwareorientadoaobjetos.conceitosintent.utils.app.UtilsApp;
+
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "";
     private Button btnPerguntar;
     private TextView tvExibirRespota;
     private TextView tvTitulo;
@@ -97,6 +101,28 @@ public class MainActivity extends AppCompatActivity {
                    }
                 }
         );
+        UtilsApp utilsApp = new UtilsApp();
+        Log.d(TAG, "Valor convertido de tipos primitivos float para int "
+                + utilsApp.convertToInt(5.197));
+
+        byte b = -27;
+        Log.d(TAG, "Valor convertido de tipos primitivos byte para int "
+                + utilsApp.convertToInt(b));
+
+        short valorShort = -1500;
+        Log.d(TAG, "Valor convertido de tipos primitivos short para int "
+                + utilsApp.convertToInt(valorShort));
+
+        char F = 15;
+        Log.d(TAG, "Valor convertido de tipos primitivos char para int "
+                + utilsApp.convertToInt(F));
+
+        long valorLong = 9223372036854775800L;
+        Log.d(TAG, "Valor convertido de tipos primitivos long para int "
+                + utilsApp.convertToInt(valorLong));
+
+
+
     }
 
     @Override
@@ -120,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void openActivityForResult() {
+    private void openActivityForResult() {//aqui tem a assinatura e sua complementação
         Intent intent = new Intent(MainActivity.this, RespostaActivity.class);
         intent.putExtra("Pergunta", edtPergunta.getText().toString());
 
