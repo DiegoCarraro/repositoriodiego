@@ -122,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
                 + utilsApp.convertToInt(valorLong));
 
 
-
     }
 
     @Override
