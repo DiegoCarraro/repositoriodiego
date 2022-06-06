@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="@+id/edtOperando2"
         app:layout_constraintStart_toStartOf="@+id/edtOperando2"
         app:layout_constraintTop_toBottomOf="@+id/edtOperando2"
-        app:srcCompat="@drawable/Igual" />
+        app:srcCompat="@drawable/ic_baseline_drag_handle_24" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:hint="Resultado da operação matemática"
+        android:hint="Resultado da Operação Matemática"
         app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
         app:layout_constraintStart_toStartOf="@+id/btnCalcular"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
