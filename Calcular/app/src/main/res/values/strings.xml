@@ -2,10 +2,10 @@
     <string name="app_name">Calcular</string>
     <string-array name="operacoes_matematica">
         <item></item>
-        <item>Dividir</item>
-        <item>Multiplicar</item>
-        <item>Somar</item>
-        <item>Subtrair</item>
+        <item>Divisão</item>
+        <item>Multiplicação</item>
+        <item>Soma</item>
+        <item>Subtração</item>
     </string-array>
 </resources>
 
