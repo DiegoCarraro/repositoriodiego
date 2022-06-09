@@ -6,6 +6,10 @@
         <item>Multiplicação</item>
         <item>Soma</item>
         <item>Subtração</item>
+        <item>Raiz Quadrada</item>
+        <item>Potencia de 10</item>
+        <item>Potenciação</item>
+        <item>Logaritmo</item>
     </string-array>
 </resources>
 
